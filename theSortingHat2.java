@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Hat
+public class theSortingHat2
 {
     public static void main(String[] args)
     {
@@ -8,7 +8,7 @@ public class Hat
         String name = input.nextLine();
         System.out.println ("Enter your favourite letter between a-d");
         String letter = input.nextLine();
-        System.out.println ("Do you like pizza? (true/false)");
+        System.out.println ("Do you like pizza? \(true/false)");
         boolean pizza = input.nextBoolean();
         input.nextLine();
         System.out.println ("Do you like sports? (true/false)");
@@ -18,15 +18,16 @@ public class Hat
         int kindness = input.nextInt();
         System.out.println ("Enter your average from last year using decimals.");
         double average = input.nextDouble();
+        sortingHat(String name, boolean pizza, boolean sports, int kindness, 
 
-
+        sortingHat(name, pizza, sports, kindness, letter, average, Gryffindor, Ravenclaw, 
+        Slytherin, Hufflepuff);
+                   
         int Gryffindor = 0;
         int Ravenclaw = 0;
         int Slytherin = 0;
         int Hufflepuff = 0;
         int max = Gryffindor;
-        sortingHat(name, pizza, sports, kindness, letter, average, Gryffindor, Ravenclaw, 
-        Slytherin, Hufflepuff);
 
         System.out.println (name + " you belong to " + max);
 
